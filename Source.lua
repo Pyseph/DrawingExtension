@@ -963,5 +963,5 @@ OnNewDrawing = function(Class, Parameter)
 		debug.profileend()
 		return DrawingObj
 	end)()
-end)
+end
 DrawingAPI = hookfunction(Drawing.new, OnNewDrawing)
