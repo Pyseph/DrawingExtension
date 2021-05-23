@@ -554,7 +554,7 @@ local function Assert(Value, Class)
 end
 
 local DrawingAPI = Drawing.new
-OnNewDrawing = newcclosure(function(Class, Parameter)
+OnNewDrawing = function(Class, Parameter)
 
 	return coroutine.wrap(function()
 		if Parameter == 'Default' then
